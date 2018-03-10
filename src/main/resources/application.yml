@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+---
+
+management:
+  security:
+    enabled: false
+
+---
+spring:
+  profiles: dev
+server:
+  port: 8000
+
+---
+spring:
+  profiles: qa
+server:
+  port: 9000
